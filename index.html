@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat pemanggilan orangtua</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div id="page1" class="page">
+        <h1>Peringatan!</h1>
+        <p>Tolong baca dengan teliti.</p>
+     <p>Klik tombol di bawah untuk melanjutkan</p>
+        <button onclick="showPage('page2')">Lanjutkan</button>
+    </div>
+
+    <div id="page2" class="page" style="display:none;">
+        <h1>Selamat Ulang Tahun Pah...!</h1>
+        <h2>ulang tahun yang ke 46</h2>
+        <p>Semoga di hari ulang tahun papah kali ini lebih berkesan dari</p>
+        <p>sebelum sebelumnya,umur papah semakin berkah,senantiasa diberikan ke sabaran</p>
+        <p>dalam mendidik kami,dan mudah mudahan masjid nya bisa secepatnya selesai,
+        </p>
+        <h2>AMIIIINNNN......</h2>
+        <p>Makasih banya papah mamah,karena mendidik kami </p>
+        <p>walaupun iir jannah fitri gk ada dirumah</p>
+        <p>mudah-mudahan ini bisa ngewakili pesan rindu kami ke papah sama mamah</p>
+        <p>sebelunya maaf mah karena waktu ulang tahun mamah gk ada kayak gini,tapi</p>
+        <p>ini juga bukan cuma hadia untuk papah tapi untuk mamah juga</p>
+        <p>Sebenarnya masih banyak lagi sih yang mau iir bilang tapi nanti ke panjangan</p>
+        <P>jadi ini aja lah...hehe</P>
+        <p>maaf ya mah pah karena sampe sekarang ini juga masih sering buat mamah papah kecewa 🙏</p>
+        <h2>love you mamah papah ❤️</h2>
+        <h1>❤️</h1>
+        <button onclick="showPage('page3')">Lihat Kenangan</button>
+    </div>
+
+    <div id="page3" class="page" style="display:none;">
+        <h1>Kenangan Indah</h1>
+        <div class="gallery">
+            <img src="mapah.jpg" alt="Kenangan 1" class="small-img">
+            <img src="keluarga.jpg" alt="Kenangan 2" class="small-img">
+            <img src="pantai.jpg" alt="kenangan 3" class="small-img">
+            <video controls>
+                <source src="kenangan.mp4" type="video/mp4">
+                Video tidak dapat diputar.
+            </video>
+            <video controls>
+                <source src="papah.mp4" type="video/mp4">
+                Video tidak dapat diputar.
+            </video>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
